@@ -1,0 +1,12 @@
+.teste{
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+   flex-direction: column;
+   width: 600px;
+}
+
+.botao{
+    margin-top:50px;
+}
