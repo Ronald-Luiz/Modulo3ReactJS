@@ -1,0 +1,28 @@
+.tabela{
+    margin: 1% 20% 1% 20%;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+  
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    line-height: inherit;
+}
+button {
+    border-radius: 20px;
+    background: lightblue;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+}

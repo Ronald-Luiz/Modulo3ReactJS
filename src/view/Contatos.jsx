@@ -3,6 +3,8 @@ import SweetAlert from 'react-bootstrap-sweetalert';
 import './css/Contatos.css'
 
 class HelloForm extends React.Component {
+    
+    
     state = {
         texto: ''
     };
@@ -18,6 +20,10 @@ class HelloForm extends React.Component {
     }
 
     render() {
+
+        document.title = 'Contatos'
+
+
         return (
             <div className="teste">
                 Nome <input type="text" onChange={this.handleTextChange.bind(this)}></input>

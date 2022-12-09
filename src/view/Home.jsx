@@ -7,7 +7,7 @@ const Home = () => {
   const [numero, setNumero] = useState(0)
 
   const botao = () => {
-
+    document.title = 'Home'
     i++;
     setNumero(i);
 

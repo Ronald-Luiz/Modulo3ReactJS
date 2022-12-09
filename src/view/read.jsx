@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Button } from 'semantic-ui-react';
+import css from './css/read.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -33,7 +34,7 @@ export default function Read() {
     }
 
     return (
-        <div>
+        <div className='tabela'>
             <Table celled>
                 <Table.Header>
                     <Table.Row>
