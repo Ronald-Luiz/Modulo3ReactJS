@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 import {
   Box,
   Container,
@@ -10,6 +11,8 @@ import {
   
 const Footer = () => {
   return (
+    <div className="rodape">
+
     <Box>
       <h1 style={{ color: "green", 
                    textAlign: "center", 
@@ -17,7 +20,10 @@ const Footer = () => {
         GeeksforGeeks: A Computer Science Portal for Geeks
       </h1>
      
-    </Box>
+    </Box>  
+    </div>
+
+
   );
 };
 export default Footer;

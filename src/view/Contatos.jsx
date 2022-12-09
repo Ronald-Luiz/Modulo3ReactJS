@@ -3,6 +3,8 @@ import SweetAlert from 'react-bootstrap-sweetalert';
 import './css/Contatos.css'
 
 class HelloForm extends React.Component {
+
+    
     state = {
         texto: ''
     };
