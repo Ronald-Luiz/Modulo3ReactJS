@@ -1,94 +1,70 @@
-import React, { useState } from 'react';
+import { useRef } from "react";
 import {Outlet} from 'react-router-dom';
+import { FaBars, FaTimes } from "react-icons/fa";
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,  
-} from 'reactstrap';
-import { className } from 'postcss-selector-parser';
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	NavLink,
+	UncontrolledDropdown,
+	DropdownToggle,
+	DropdownMenu,
+	DropdownItem,
+	NavbarText,  
+  } from 'reactstrap';
+import "./css/Menu.css";
 
-function Example(args) {
-  const [isOpen, setIsOpen] = useState(false);
+function Barra() {
+	const navRef = useRef();
 
-  const toggle = () => setIsOpen(!isOpen);
+	const showNavbar = () => {
+		navRef.current.classList.toggle("responsive_nav");
+	};
 
-  return (
-    <div className="cabecalho">
-
-
-
-      <Navbar {...args}
-      color="dark"
-      dark
-      >
-
-
-        <NavbarBrand href="/">
-        <img
-        alt="logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-        style={{
-          height: 40,
-          width: 40,
-        }}/>
-        
-          Nome do projeto</NavbarBrand>
-          
-          <NavbarText>Venha fazer parte do nosso time!</NavbarText>
-
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <NavLink href="/Produtos">Produtos</NavLink>
-            </NavItem>
-
-
-
-
-            <NavItem>
-              <NavLink href="/Servicos">Serviços</NavLink>
-            </NavItem>
-
-            <NavItem>
-              <NavLink href="/Contatos">Contato</NavLink>
-            </NavItem>
-
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Configurações
+	return (
+    <div>
+		<header>
+			<h3>LOGO</h3>
+			<div>
+			<nav ref={navRef}>
+				<a href="/">INICIO</a>
+				<a href="/produtos">PRODUTOS</a>
+				<a href="/servicos">SERVIÇOS</a>
+				<a href="/contatos">CONTATOS</a>
+				<UncontrolledDropdown
+				inNavbar
+				nav
+				>
+              <DropdownToggle nav caret className="ConfBtn">
+                CONFIGURAÇÕES
               </DropdownToggle>
 
         
-              <DropdownMenu right>
-              
+              <DropdownMenu className="ConfOpen" left>
                 <DropdownItem href="/read">Estoque</DropdownItem>
                 <DropdownItem href="/create">Criar</DropdownItem>
-                
-                <DropdownItem/>
               </DropdownMenu>
   
 
 
             </UncontrolledDropdown>
-          </Nav>
-          
-        </Collapse>
-       
-      </Navbar>
-
-      <Outlet />
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+				</nav>
+			<button className="nav-btn" onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</div>
+    </header>
+    <Outlet />
     </div>
-  );
+	);
 }
 
-export default Example;
+export default Barra;

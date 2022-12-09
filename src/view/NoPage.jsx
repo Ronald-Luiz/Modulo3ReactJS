@@ -3,10 +3,7 @@ import erro from '../erro.png';
 import { className } from 'postcss-selector-parser';
 
 const NoPage = () => {
-  
-  document.title = 'ERRO.404'
-  
-  return (
+    return (
       <div className='Main'>
         <div className='ErroPage'><h1><b>OPS...</b></h1></div>
 
