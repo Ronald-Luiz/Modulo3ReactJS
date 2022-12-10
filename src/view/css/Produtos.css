@@ -1,6 +1,5 @@
 
 
-
 .card{
     
     overflow: hidden;
@@ -41,6 +40,16 @@
   .blue {
     border-left: 3px solid #4895ff;
   }
+
+@media (max-height:400px)
+{
+.image{
+max-width: 150px;
+max-height:150px;
+}
+
+}
+
    
 @media (max-height:800px)
 {
