@@ -12,9 +12,9 @@ const Example = (props) => {
 
       <div>
         <div className="card blue">
-          <h2>NVIDIA
+          <h2>
             
-            <img class="image" src="http://store-images.s-microsoft.com/image/apps.20966.13599037783181022.b05b7adf-6b7a-44ae-9a70-9dc9370ea7e6.4cd88c60-6ff1-4b0f-aed6-8e2efa5629c1" />
+            <img class="image" src="" />
             
           </h2>
           
@@ -22,35 +22,30 @@ const Example = (props) => {
         
           <div className="card blue">
             <h2>RTX 3070
+            <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
               <p>Configure o seu sistema</p>
-              <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
-              <Button>Button</Button>
+              <Button>Comprar</Button>
             </h2>
             </div>
 
           <div className="card blue">
             <h2>RTX 3080
-              <p>Configure o seu sistema</p>
-              <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
-              <Button>Button</Button>
+            <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
+              <p>As placas de vídeo GeForce RTX™ 3080 Ti e RTX 3080 entregam o altíssimo desempenho que os gamers buscam. Baseadas em Ampere - a 2a geração da arquitetura RTX da NVIDIA - elas possuem Núcleos RT e Núcleos Tensor melhorados, novos multiprocessadores de streaming e memórias GDDR6X super rápidas, para uma experiência em jogos simplesmente incrível.</p>
+              
+              <Button>Comprar</Button>
             </h2>
           </div>
 
           <div className="card blue">
             <h2>RTX 3080
-              <p>Configure o seu sistema</p>
-              <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
-              <Button>Button</Button>
+            <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
+              <p>Configure o seu sistema</p>        
+              <Button>Comprar</Button>
             </h2>
           </div>
 
-          <div className="card blue">
-            <h2>RTX 3080
-              <p>Configure o seu sistema</p>
-              <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
-              <Button>Button</Button>
-            </h2>
-          </div>
+        
           
           
 
@@ -59,46 +54,42 @@ const Example = (props) => {
         </div>
 
         <div className="card blue">
-          <h2>AMD
+          <h2>
     
-            <img class="image" src="https://files.tecnoblog.net/wp-content/uploads/2021/10/logotipo_da_empresa_amd.png"  />
+            <img class="image" src=""  />
            
           </h2>
         
           <div className="card blue">
             <h2>RX 5700 XT
+            <img class="image" src="https://m.media-amazon.com/images/I/61or+SFoTOL._AC_SX425_.jpg" alt="settings" />
               <p>Configure o seu sistema</p>
-              <img class="image" src="https://m.media-amazon.com/images/I/61or+SFoTOL._AC_SX425_.jpg" alt="settings" />
-              <Button>Button</Button>
+            
+              <Button>Comprar</Button>
             </h2>
             </div>
 
           <div className="card blue">
             <h2>RX 6800
+            <img class="image" src="https://m.media-amazon.com/images/I/61or+SFoTOL._AC_SX425_.jpg" alt="settings" />
               <p>Configure o seu sistema</p>
-              <img class="image" src="https://m.media-amazon.com/images/I/61or+SFoTOL._AC_SX425_.jpg" alt="settings" />
-              <Button>Button</Button>
+             
+              <Button>Comprar</Button>
             </h2>
 
           </div>
 
           <div className="card blue">
             <h2>RX 6800
+            <img class="image" src="https://m.media-amazon.com/images/I/61or+SFoTOL._AC_SX425_.jpg" alt="settings" />
               <p>Configure o seu sistema</p>
-              <img class="image" src="https://m.media-amazon.com/images/I/61or+SFoTOL._AC_SX425_.jpg" alt="settings" />
-              <Button>Button</Button>
+             
+              <Button>Comprar</Button>
             </h2>
 
           </div>
 
-          <div className="card blue">
-            <h2>RX 6800
-              <p>Configure o seu sistema</p>
-              <img class="image" src="https://m.media-amazon.com/images/I/61or+SFoTOL._AC_SX425_.jpg" alt="settings" />
-              <Button>Button</Button>
-            </h2>
-
-          </div>
+         
 
         </div>
 
@@ -115,38 +106,33 @@ const Example = (props) => {
         
           <div className="card blue">
             <h2>none
+            <img class="image" src="settings.png" alt="settings" />
               <p>Configure o seu sistema</p>
-              <img class="image" src="settings.png" alt="settings" />
-              <Button>Button</Button>
+              
+              <Button>Comprar</Button>
             </h2>
             </div>
 
           <div className="card blue">
             <h2>none
+            <img class="image" src="settings.png" alt="settings" />
               <p>Configure o seu sistema</p>
-              <img class="image" src="settings.png" alt="settings" />
-              <Button>Button</Button>
+            
+              <Button>Comprar</Button>
             </h2>
 
           </div>
 
           <div className="card blue">
             <h2>none
+            <img class="image" src="settings.png" alt="settings" />
               <p>Configure o seu sistema</p>
-              <img class="image" src="settings.png" alt="settings" />
-              <Button>Button</Button>
+             
+              <Button>Comprar</Button>
             </h2>
 
           </div>
 
-          <div className="card blue">
-            <h2>none
-              <p>Configure o seu sistema</p>
-              <img class="image" src="settings.png" alt="settings" />
-              <Button>Button</Button>
-            </h2>
-
-          </div>
 
         </div>
 

@@ -7,3 +7,31 @@
   margin-bottom: -900px;
 
 }
+
+
+@media (max-width:900px)
+{
+.rodape{
+  margin-bottom: -3500px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+}
+
+
+
+@media (min-height:200px)
+{
+.rodape{
+  margin-bottom: -4000px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+}
+
