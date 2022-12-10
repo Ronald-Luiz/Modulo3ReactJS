@@ -41,7 +41,7 @@
     border-left: 3px solid #4895ff;
   }
 
-@media (max-height:400px)
+@media (min-height:400px)
 {
 .image{
 max-width: 150px;
