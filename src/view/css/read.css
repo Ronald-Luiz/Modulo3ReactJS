@@ -1,8 +1,10 @@
 .tabela{
-    margin: 1% 20% 1% 20%;
+    margin: 10%  20% ;
+    justify-content: center;
     border: solid 2px;
     border-radius: 20px;
-    padding: 20px;
+    /*Overflow: hidden;*/
+    
 }
 
 
@@ -14,12 +16,13 @@ button, select {
     text-transform: none;
 }
 button, input, optgroup, select, textarea {
-    margin: 0;
+    padding: 5px;
     line-height: inherit;
 }
 button {
-    border-radius: 20px;
-    background: lightblue;
+    border: inset #7fffd4;
+    border-radius: 13px;
+    
 }
 *, ::after, ::before {
     box-sizing: border-box;

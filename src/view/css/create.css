@@ -1,16 +1,32 @@
-Form{
+.criacao {
     text-align: center;
-    margin: 30px;
+    margin: 30%;
 }
 
-input{
+input {
     margin-left: 10px;
+    border: inset #7fffd4;
 }
 
-.nome{
+input :hover {
+    border-radius: 50px rgb(47, 26, 121);
+}
+
+.nome {
+    margin: 1px 10px 1px 10px;
+}
+
+.sobrenome {
     margin: 10px;
 }
 
-.sobrenome{
-    margin: 10px;
+.btn {
+    border: inset #7fffd4;
+    margin-left: 10%;
+}
+
+label {
+    font-size: large;
+  
+    color: white;
 }
