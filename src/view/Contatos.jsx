@@ -1,6 +1,7 @@
 import React from 'react';
 import SweetAlert from 'react-bootstrap-sweetalert';
 import './css/Contatos.css'
+import Swal from 'sweetalert2'
 
 class HelloForm extends React.Component {
 
@@ -16,7 +17,7 @@ class HelloForm extends React.Component {
     }
 
     handleClick() {
-        alert();
+      Swal.fire('Entraremos em contato em breve!')
     }
 
     render() {
