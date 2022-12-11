@@ -1,61 +1,58 @@
-
-
-.card{
-    
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: auto 500px 500px 500px 400px;
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-    padding: 10px;
-    margin: 20px;
-    width:auto;
-    transition: all 0.3s ease-out;
+.card {
   
-    
-    
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto 500px 500px 500px 400px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 10px;
+  margin: 20px;
+  width: auto;
+  transition: all 0.3s ease-out;
+
+
+
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-  }
-   
-  .card p {
-    color: #a3a5ae;
-    font-size: 16px;
-  }
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.card p {
+  color: #a3a5ae;
+  font-size: 16px;
+}
 
 
 
+.image {
+  float: right;
+  max-width: 350px;
+  max-height: 350px;
+}
+
+
+
+
+.blue {
+  border-left: 3px solid #4895ff;
+}
+
+@media (max-height:800px) {
   .image {
-    float: right;
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 150px;
+    max-height: 150px;
   }
 
-  
+}
 
 
-  .blue {
-    border-left: 3px solid #4895ff;
+
+@media (max-height:800px) {
+  .card {
+    display: flex;
+    flex-direction: column;
   }
-
-@media (min-height:200px)
-{
-.image{
-max-width: 150px;
-max-height:150px;
-}
-
-}
-
-   
-@media (max-height:800px)
-{
-.card{
- display: flex;
-flex-direction: column;
-}
 
 }
