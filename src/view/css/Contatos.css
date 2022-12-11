@@ -26,16 +26,16 @@ input{
 
 @media (max-height:800px) {
     .teste {
-      max-width: 150px;
-      max-height: 150px;
+      max-width: 350px;
+      max-height: 350px;
     }
   
   }
   
   @media (max-width:800px) {
     .teste {
-      max-width: 150px;
-      max-height: 150px;
+      max-width: 350px;
+      max-height: 350px;
     }
   
   }
