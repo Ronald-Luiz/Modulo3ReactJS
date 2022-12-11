@@ -24,4 +24,37 @@ input{
     margin-right: 15%;
 }
 
-
+@media (max-height:800px) {
+    .teste {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  
+  }
+  
+  @media (max-width:800px) {
+    .teste {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  
+  }
+  
+  
+  
+  
+  @media (max-height:800px) {
+    .teste {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }
+  
+  @media (max-width:800px) {
+    .teste {
+      display:flex;
+      flex-direction: column;
+    }
+  
+  }
