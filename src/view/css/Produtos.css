@@ -47,6 +47,13 @@
 
 }
 
+@media (max-width:800px) {
+  .image {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+}
 
 
 
