@@ -22,13 +22,25 @@ class HelloForm extends React.Component {
 
     render() {
         return (
-            <div className="teste">
-                Nome <input type="text" onChange={this.handleTextChange.bind(this)}></input>
-                Email <input type="text" onChange={this.handleTextChange.bind(this)}></input>
-                Telefone <input type="text" onChange={this.handleTextChange.bind(this)}></input>
-                Digite o texto: <input type="text" onChange={this.handleTextChange.bind(this)}></input>
+
+
+            <div className="card blue">
+         
+          
+
+          <div className="teste">
+                <strong>Nome</strong> <input type="text" onChange={this.handleTextChange.bind(this)}></input>
+                <strong>Email</strong> <input type="text" onChange={this.handleTextChange.bind(this)}></input>
+                <strong>Telefone</strong> <input type="text" onChange={this.handleTextChange.bind(this)}></input>
+                <strong>Digite o texto:</strong> <input type="text" onChange={this.handleTextChange.bind(this)}></input>
                 <button className="botao" onClick={this.handleClick.bind(this)}>Enviar</button>
             </div>
+
+                
+</div>          
+          
+          
+           
         )
     }
 }
