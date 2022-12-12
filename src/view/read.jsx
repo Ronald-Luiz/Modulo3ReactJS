@@ -5,6 +5,9 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function Read() {
+    
+    document.title="Estoque"
+    
     const [apiData, setApiData] = useState([]);
     useEffect(() => {
         axios.get(`https://js0n-server.vercel.app/GPU`)
