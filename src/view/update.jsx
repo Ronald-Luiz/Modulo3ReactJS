@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import "./css/create.css"
 export default function Update() {
+    document.title="Update"
     let history = useNavigate();
     const [nomes, setNomes] = useState('');
     const [valor, setValor] = useState('');
