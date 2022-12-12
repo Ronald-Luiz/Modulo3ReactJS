@@ -1,9 +1,12 @@
 .Main{
-    background-color: rgb(165, 165, 165);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .ErroPage{
     text-align: center;
-    color: floralwhite;
+    color: black;
     font-size: 2.5em;
 }
 .ErroPage h1{
@@ -19,7 +22,7 @@
 }
 .ErroPage2{
     text-align: center;
-    color: floralwhite;
+    color: black;
     font-size: 2em;
  }
 .Ul{
