@@ -4,8 +4,6 @@ import './css/Contatos.css'
 import Swal from 'sweetalert2'
 
 class HelloForm extends React.Component {
-
-      document.title="Contatos"
     
     state = {
         texto: ''
