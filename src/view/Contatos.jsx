@@ -1,8 +1,7 @@
 import React from 'react';
 import SweetAlert from 'react-bootstrap-sweetalert';
-import './css/Contatos.css';
-import Swal from 'sweetalert2';
-import avatar from "../images/avatar.png"
+import './css/Contatos.css'
+import Swal from 'sweetalert2'
 
 class HelloForm extends React.Component {
     
@@ -25,7 +24,7 @@ class HelloForm extends React.Component {
         document.title="Contatos"
         return (
 
-        <div>
+
             <div className="card blue">
          
           
@@ -39,68 +38,9 @@ class HelloForm extends React.Component {
                 </div>
                 <button className="botao" onClick={this.handleClick.bind(this)}>Enviar</button>
                 
-            </div>   
-
-             <div class="main texto" style="margin-top: 45px;">
-    <div class="card-container">
-        <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
-          <p><h4>LEONARDO MACENA</h4></p>
-          <p><h5>Função na equipe</h5></p>
-          <div class="social">
-            <a href="#" target="_blank"><img src="img/git.png"></a>
-            <a href="#" target="_blank"><img src="img/inst.png"></a>
-            <a href="#" target="_blank"><img src="img/linkedin.png" ></a>
-          </div>
-        </div>
-   
-        <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
-          <p><h4>PABLO MICELI</h4></p>
-          <p><h5>Função na equipe</h5></p>
-          <div class="social">
-            <a href="#" target="_blank"><img src="img/git.png" alt="GitHub"></a>
-            <a href="#" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
-            <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
-          <p><h4>RONALD LUIZ</h4></p>
-          <p><h5>Função na equipe</h5></p>
-          <div class="social">
-            <a href="#" target="_blank"><img src="img/git.png" alt="GitHub"></a>
-            <a href="#" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
-            <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
-          <p><h4>VALDEILSON</h4></p>
-          <p><h5>Função na equipe</h5></p>
-          <div class="social">
-            <a href="#" target="_blank"><img src="img/git.png" alt="GitHub"></a>
-            <a href="#" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
-            <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
-          <p><h4>VICTOR ROBSON</h4></p>
-          <p><h5>Função na equipe</h5></p>
-          <div class="social">
-            <a href="#" target="_blank"><img src="img/git.png" alt="GitHub"></a>
-            <a href="#" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
-            <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
-          </div>
-        </div>       
-    </div>
-  </div>
+            </div>          
           
-          </div>
+          
            
         )
     }
