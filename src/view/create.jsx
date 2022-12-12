@@ -6,6 +6,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import "./css/create.css"
 
 export default function Create() {
+  document.title="Inserir"
   let history = useNavigate();
   const [nomes, setNomes] = useState('');
   const [valor, setValor] = useState('');
