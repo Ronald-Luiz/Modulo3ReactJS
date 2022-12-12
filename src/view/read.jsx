@@ -5,7 +5,6 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function Read() {
-
     const [apiData, setApiData] = useState([]);
     useEffect(() => {
         axios.get(`https://js0n-server.vercel.app/GPU`)
@@ -40,8 +39,9 @@ export default function Read() {
                     <Table.Row>
                         <Table.HeaderCell>ID</Table.HeaderCell>
                         <Table.HeaderCell>Modelo</Table.HeaderCell>
+                        <Table.HeaderCell>Marca</Table.HeaderCell>
+                        <Table.HeaderCell>Posição</Table.HeaderCell>
                         <Table.HeaderCell>Valor</Table.HeaderCell>
-                        <Table.HeaderCell></Table.HeaderCell>
                         <Table.HeaderCell></Table.HeaderCell>
                     </Table.Row>
                 </Table.Header>
@@ -52,6 +52,8 @@ export default function Read() {
                             <Table.Row>
                                 <Table.Cell>{data.id}</Table.Cell>
                                 <Table.Cell>{data.nomes}</Table.Cell>
+                                <Table.Cell>{data.marca}</Table.Cell>
+                                <Table.Cell>{data.posicao}</Table.Cell>
                                 <Table.Cell>{data.valor}</Table.Cell>
                                 <Table.Cell>
                                     <Link to='/update'>

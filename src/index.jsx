@@ -58,9 +58,6 @@ root.render(
 
     <Footer />
 
-
-
-
     
   </>
 );

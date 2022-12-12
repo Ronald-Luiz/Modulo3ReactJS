@@ -39,6 +39,7 @@ import styled from 'styled-components';
 
 SWEET ALERT
 
+npm install sweetalert2
 npm i react-bootstrap-sweetalert
 import SweetAlert from 'react-bootstrap-sweetalert';
 

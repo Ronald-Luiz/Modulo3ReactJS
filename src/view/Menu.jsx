@@ -3,6 +3,13 @@ import {Outlet} from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../view/logo.png"
 import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	NavLink,
 	UncontrolledDropdown,
 	DropdownToggle,
 	DropdownMenu,

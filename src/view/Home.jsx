@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './css/Home.css'; 
+import './css/Home.css';
+import Carousel from 'react-bootstrap/Carousel';
 import {
   Button,
-  Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
@@ -11,141 +11,135 @@ import {
   Col
 } from 'reactstrap';
 
+function UncontrolledExample() {
+  return (
+
+    <Container className="Container">
+
+      <div className="carousel">
+        <Carousel>
 
 
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://i.ibb.co/bWCnK4f/1-1-1.jpg"
+              alt=""
+            />
+            <Carousel.Caption>
+              <h3></h3>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://i.ibb.co/fdCY7QL/2.jpg"
+              alt=""
+            />
 
-  const items = [
-  {
-    src: 'https://i.ibb.co/bWCnK4f/1-1-1.jpg',
-  altText: '',
-  caption: '',
-  key: 1,
-  },
-  {
-    src: 'https://i.ibb.co/fdCY7QL/2.jpg',
-  altText: '',
-  caption: '',
-  key: 2,
-  },
-  {
-    src: 'https://i.ibb.co/D4qV6YP/rtx-3080-capa.jpg',
-  altText: '',
-  caption: '',
-  key: 3,
-  },
+            <Carousel.Caption>
+              <h3></h3>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://i.ibb.co/D4qV6YP/rtx-3080-capa.jpg"
+              alt="Third slide"
+            />
 
+            <Carousel.Caption>
+              <h3></h3>
+              <p>
 
-
-  ];
-
-
-
-  function Example(args) {
-      document.title="Boom gráfico"
-    
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-  const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-  setActiveIndex(nextIndex);
-  };
-
-  const previous = () => {
-    if (animating) return;
-  const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-  setActiveIndex(nextIndex);
-  };
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-  setActiveIndex(newIndex);
-  };
-
-  const slides = items.map((item) => {
-    return (
-  <CarouselItem
-    onExiting={() => setAnimating(true)}
-    onExited={() => setAnimating(false)}
-    key={item.src}
-  >
-    <img src={item.src} alt={item.altText} />
-    <CarouselCaption
-      captionText={item.caption}
-      captionHeader={item.caption}
-    />
-  </CarouselItem>
-  );
-    
-  });
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
 
 
+        </Carousel>
+      </div>
+
+      <div className='div2'>
+
+        <div className="card blue">
+
+          <img class="image" src="https://i.ibb.co/znMtXTW/CARROSEL1-1-1.png" alt="" />
 
 
+        </div>
 
 
-return (
+      </div>
 
-<div>
-<Container className="Container">
 
-<Col className="SlideCarouse1">
+      <div className='div2'>
 
-  <Carousel
-    activeIndex={activeIndex}
-    next={next}
-    previous={previous}
-    {...args}
-  >
-    <CarouselIndicators
-      items={items}
-      activeIndex={activeIndex}
-      onClickHandler={goToIndex}
-    />
-    {slides}
-    <CarouselControl
-      direction="prev"
-      directionText="Previous"
-      onClickHandler={previous}
-    />
-    <CarouselControl
-      direction="next"
-      directionText="Next"
-      onClickHandler={next}
-    />
 
-  </Carousel>
-  </Col>
-
-  </Container>
-
-  <div className='div2'>
-
-    
-  <div className="card blue">
-            <h2>RTX 3070
+        <div className="card blue">
+          
+          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS
+          <div className="box-posicao-top">
+                <div><b id="posicaoN">{1}</b></div>
+              </div>
             <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
-              <p>Configure o seu sistema</p>
-              <Button>Comprar</Button>
-            </h2>
-            </div>
+          </h5><strong>RX 5700 -</strong> 
+          <p>xGB, clock tal, etc, etc, etc, etc, etc</p>
+          <strong>R$ 2.000</strong> 
+          <div className="container-comprar"><button>EU QUERO</button></div>
+
+        </div>
+
+        <div className="card blue">
+          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS
+          <div className="box-posicao-top">
+                <div><b id="posicaoN">{2}</b></div>
+              </div>
+            <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
+          </h5><strong>RX 5700 -</strong> 
+          <p>xGB, clock tal, etc, etc, etc, etc, etc</p>
+          <strong>R$ 2.000</strong> 
+          <div className="container-comprar"><button>EU QUERO</button></div>
+
+        </div>
+        
+
+        <div className="card blue">
+          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS
+          <div className="box-posicao-top">
+                <div><b id="posicaoN">{3}</b></div>
+              </div>
+            <img class="image" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
+          </h5><strong>RX 5700 -</strong> 
+          <p>xGB, clock tal, etc, etc, etc, etc, etc</p>
+          <strong>R$ 2.000</strong> 
+          <div className="container-comprar"><button>EU QUERO</button></div>
+
+
+        </div>
+
+
+       
+
+      </div>
+
+      <div className="vermais"><a href="/produtos">VER MAIS</a></div>
+
+
+      
+
+
+    </Container>
 
 
 
 
-  </div>
+
+  );
 
 
-  </div>
-
-  
-
-);
-
- 
-
- 
 
 
 }
@@ -153,4 +147,11 @@ return (
 
 
 
-export default Example;
+
+
+
+
+
+
+
+export default UncontrolledExample;

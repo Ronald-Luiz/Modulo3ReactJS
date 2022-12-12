@@ -17,7 +17,6 @@ export default function Create() {
  
 
   const sendDataToAPI = () => {
-
     axios.post(`https://js0n-server.vercel.app/GPU`, {
       nomes,
       valor,
