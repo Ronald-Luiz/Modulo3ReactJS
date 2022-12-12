@@ -1,5 +1,6 @@
 .rodape {
   height: auto;
+  margin-bottom: -1000px;
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -26,7 +27,7 @@
 @media (min-height:200px)
 {
 .rodape{
-  margin-bottom: -1000px;
+  margin-bottom: -4000px;
   position: absolute;
   bottom: 0;
   width: 100%;
