@@ -36,6 +36,108 @@ text-decoration:none;
     background:linear-gradient(to bottom, #46a7f5 5%, #f7d6b3 100%);
     }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h1{
+    text-align: center
+}
+
+.card-container{
+    display: grid ;
+    justify-content: space-around;
+    text-align: center;
+    min-width: 160px;
+    min-height: 430px;
+    grid-template-columns: repeat(5, calc(18% - 5px));
+    margin: 2%;
+    padding: 5px;
+}
+
+.cards{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 20px;   
+    word-wrap: break-word;
+    border: 1px solid rgba(0,0,0,0.125);
+    box-shadow: 0 2px 15px -3px rgb(0 0 0 / 7%), 0 10px 20px -2px rgb(0 0 0 / 4%);
+    padding: 10px;
+    margin: 5px;
+    min-width: 200px;
+}
+
+.cards img {
+    border-radius: 50%;
+    width: 150px;
+    height: 160px;
+    background-size: cover;
+}
+
+.avatar{
+    display: block;
+    position: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    border: 4px solid rgb(80, 0, 0);
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.social a{
+    margin: 5px;
+}
+
+.social img{
+    width: 35px;
+    height: 35px;
+}
+
+@media (max-width: 1080px){
+
+    .card-container{
+        grid-template-columns: repeat(4, calc(25% - 5px));
+    }
+}
+
+@media (max-width: 920px){
+    
+    .card-container{
+        grid-template-columns: repeat(3, calc(35% - 5px));
+    }
+
+}
+
+@media (max-width: 767px){
+    .navtext{
+        text-align: center;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, calc(48% - 5px));
+    }
+    
+}
+
+@media (max-width: 620px){
+
+    .card-container{
+        grid-template-columns: repeat(1, calc(80% - 5px));
+    }
+    
+}
+
 @media (max-height:800px) {
     .teste {
       max-width: 350px;
