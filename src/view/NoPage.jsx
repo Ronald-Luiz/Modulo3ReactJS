@@ -1,6 +1,7 @@
 
 import erro from '../images/erro.png';
-import { className } from 'postcss-selector-parser';
+import "./css/NoPage.css"
+
 
 const NoPage = () => {
     return (
@@ -18,8 +19,6 @@ const NoPage = () => {
           </ul>
 
         </div>
-
-        <footer className='Rodape'>Leonardo Macena</footer>
 
       </div>
     );
