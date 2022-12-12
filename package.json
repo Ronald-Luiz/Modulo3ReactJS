@@ -21,6 +21,7 @@
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4",
     "styled-components": "^5.3.6",
+    "sweetalert2": "^11.6.15",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
@@ -47,19 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-    
-  }
-  
-  
-  {
-  "name": "my-package",
-  "scripts": {
-    "build": "babel src -d lib",
-    "test": "jest"
   }
 }
-  
-  
-}
-
-

@@ -17,7 +17,7 @@ class HelloForm extends React.Component {
     }
 
     handleClick() {
-      Swal.fire('Entraremos em contato em breve!')
+        Swal.fire('Entraremos em contato em breve!')
     }
 
     render() {

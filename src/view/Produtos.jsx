@@ -100,7 +100,7 @@ const Example = (props) => {
         <div className="card blue">
           <h2>none
           
-            <img class="image" src=""  />
+            <img class="image" src="article.png"  />
       
           </h2>
         

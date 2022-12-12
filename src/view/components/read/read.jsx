@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Table, Button } from 'semantic-ui-react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './read.css'
 
 export default function Read() {
     const [apiData, setApiData] = useState([]);
@@ -54,7 +55,7 @@ export default function Read() {
                                 <Table.Cell>{data.lastName}</Table.Cell>
                                 <Table.Cell>
                                     <Link to='/update'>
-                                        <Button
+                                        <Button className="Button"
                                             color="green"
                                             onClick={() => setData(data.id, data.firstName, data.lastName)}>
                                             Update
