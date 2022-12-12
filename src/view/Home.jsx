@@ -12,6 +12,7 @@ import {
 } from 'reactstrap';
 
 function UncontrolledExample() {
+  document.title="Boom gráfico"
   return (
 
     <Container className="Container">
