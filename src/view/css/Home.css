@@ -4,6 +4,8 @@
     display: fixed;
     flex-direction: column;
     box-sizing: content-box;
+    margin-top:20px;
+    margin-bottom:20px;
  
 }
 .SlideCarousel {
@@ -50,11 +52,10 @@ a:hover{
 
 
 .div2{
-    display: flex;
-    flex-direction: row;
-   
-    width:auto;
-    transition: all 0.3s ease-out;
+  display: grid;
+  grid-template-columns: repeat(3, calc(33.3%));
+  justify-content: center;
+  text-align: center;
   
 }
 
@@ -80,6 +81,7 @@ a:hover{
 .div2{
  display: flex;
 flex-direction: column;
+
 
 
 
