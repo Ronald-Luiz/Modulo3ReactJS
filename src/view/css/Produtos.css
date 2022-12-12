@@ -1,75 +1,102 @@
-.card {
-  
-  overflow: hidden;
+
+
+.containerCards {
   display: grid;
-  grid-template-columns: auto 500px 500px 500px 400px;
-  border-radius: 5px;
-  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-  padding: 10px;
-  margin: 20px;
-  width: auto;
-  transition: all 0.3s ease-out;
+  grid-template-columns: repeat(3, calc(33.3%));
+  justify-content: center;
+  text-align: center;
+}
 
+.card{
+    display: flex;
+    flex-direction: column;
 
-
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 20px;
+    width:auto;
+    transition: all 0.3s ease-out;
+    position: inherit;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  cursor: pointer;
-}
-
-.card p {
-  color: #a3a5ae;
-  font-size: 16px;
-}
-
-
-
-.image {
-  float: right;
-  max-width: 350px;
-  max-height: 350px;
-}
-
-
-
-
-.blue {
-  border-left: 3px solid #4895ff;
-}
-
-@media (max-height:800px) {
-  .image {
-    max-width: 150px;
-    max-height: 150px;
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: #a3a5ae;
+    font-size: 16px;
   }
 
-}
-
-@media (max-width:800px) {
-  .image {
-    max-width: 150px;
-    max-height: 150px;
-  }
-
-}
-
-
-
-
-@media (max-height:800px) {
-  .card {
+  .container-top-placas, .container-valor{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
   }
+  .container-txt-produto{
+    margin-top: 12px;
+  }
+
+  .txt-topPlaca{
+    font-size: 18px !important;
+    margin-bottom: 0;
+  }
+
+  .box-posicao-top {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    background-color: #43AEE3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+
+  .image-div-produto{
+    padding: 4%;
+    margin-top: 12px;
+  }
+
+  .image-produto {
+    justify-content: center;
+    width: 80%;
+  }
+
+.txt-produto {
+  text-align: left;
 
 }
 
-@media (max-width:800px) {
-  .card {
-    display:flex;
-    flex-direction: column;
-  }
+.container-valor{
+  margin-top: 12px;
+}
+.container-comprar button{
+  padding: 8px;
+  border: none;
+  color: white;
+  background-color: #43AEE3;
+}
 
+.valor h4{
+  margin: 0px 10px 0px 3px;
+}
+
+@media (max-width: 700px)
+{
+.card{
+ display: flex;
+flex-direction: column;
+}
+
+.containerCards {
+  display: grid;
+  grid-template-columns: repeat(1, calc(90%));
+}
 }

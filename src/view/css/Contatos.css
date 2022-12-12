@@ -1,6 +1,3 @@
-body{
-    background: #000000a8;
-}
 .teste{
    
     margin-top:50px;
@@ -20,53 +17,7 @@ input{
 
 .botao{
     margin-top:50px;
-    border:1px solid #25692A;
-border-radius:4px;
-display:inline-block;
-cursor:pointer;
-font-family:Verdana;
-font-weight:bold;
-font-size:13px;
-padding:6px 10px;
-text-decoration:none;
+    margin-right: 15%;
 }
 
 
-.botao:hover {
-    background:linear-gradient(to bottom, #46a7f5 5%, #f7d6b3 100%);
-    }
-
-@media (max-height:800px) {
-    .teste {
-      max-width: 350px;
-      max-height: 350px;
-    }
-  
-  }
-  
-  @media (max-width:800px) {
-    .teste {
-      max-width: 350px;
-      max-height: 350px;
-    }
-  
-  }
-  
-  
-  
-  
-  @media (max-height:800px) {
-    .teste {
-      display: flex;
-      flex-direction: column;
-    }
-  
-  }
-  
-  @media (max-width:800px) {
-    .teste {
-      display:flex;
-      flex-direction: column;
-    }
-  
-  }

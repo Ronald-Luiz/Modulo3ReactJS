@@ -18,10 +18,6 @@ li{
 	list-style: none !important;
 }
 
-h3{
-	margin-right: 2em !important;
-}
-
 .ConfBtn{
 	background-color: black;
 	border: none;
@@ -70,9 +66,12 @@ header .nav-btn {
 	outline: none;
 	color: var(--textColor);
 	visibility: hidden;
+	display: none;
 	opacity: 0;
 	font-size: 1.8rem;
 }
+
+
 
 header div,
 nav {
@@ -80,10 +79,15 @@ nav {
 	align-items: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 	header .nav-btn {
 		visibility: visible;
+		display: block;
 		opacity: 1;
+	}
+
+	header img{
+		width: 200px;
 	}
 
 	header nav {

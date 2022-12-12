@@ -1,40 +1,93 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
+import { Button } from 'reactstrap';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import "./css/create.css"
 
 export default function Create() {
   let history = useNavigate();
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [nomes, setNomes] = useState('');
+  const [valor, setValor] = useState('');
+  const [valorParcelado, setValorParcelado] = useState('');
+  const [posicao, setPosicao] = useState('');
+  const [marca, setMarca] = useState('');
+  const [subtitulo, setSubtitulo] = useState('');
+  const [imagem, setImagem] = useState('');
+ 
 
   const sendDataToAPI = () => {
     axios.post(`https://js0n-server.vercel.app/GPU`, {
-      firstName,
-      lastName
+      nomes,
+      valor,
+      valorParcelado,
+      posicao,
+      marca,
+      subtitulo,
+      imagem
     }).then(() => {
       history.push('/read')
     })
   }
   return (
-    <div>
-      <Form>
-        <Form.Field>
-          <label>First Name</label>
-          <input name="fname" 
-          onChange={(e) => setFirstName(e.target.value)} 
-          placeholder='First Name' />
+    <div className='Main'>
+      <div className='nada'></div>
+      <Form className='form'>
+        <Form.Field className='inputs'>
+          <label><b>TÍTULO</b></label>
+          <input name="titulo" 
+          onChange={(e) => setNomes(e.target.value)} 
+          placeholder='Modelo' />
         </Form.Field>
-        <Form.Field>
-          <label>Last Name</label>
+        <Form.Field className='inputs'>
+          <label><b>SUBTÍTULO</b></label>
+          <input name="subtitulo" 
+          onChange={(e) => setSubtitulo(e.target.value)} 
+          placeholder='subtitulo' />
+        </Form.Field>
+        <Form.Field className='inputs'>
+          <label><b>PREÇO</b></label>
           <input 
-          name="lname" 
-          placeholder='Last Name' 
-          onChange={(e) => setLastName(e.target.value)} 
+          name="valor" 
+          placeholder='R$' 
+          onChange={(e) => setValor(e.target.value)} 
           />
         </Form.Field>
-        <Button type='submit' onClick={sendDataToAPI}>Submit</Button>
+        <Form.Field className='inputs'>
+          <label><b>PREÇO PARCELADO</b></label>
+          <input 
+          name="valorParcelado" 
+          placeholder='R$' 
+          onChange={(e) => setValorParcelado(e.target.value)} 
+          />
+        </Form.Field>
+        <Form.Field className='inputs'>
+          <label><b>POSIÇÃO</b></label>
+          <input 
+          name="posicao" 
+          placeholder='Nº' 
+          onChange={(e) => setPosicao(e.target.value)} 
+          />
+        </Form.Field>
+        <Form.Field className='inputs'>
+          <label><b>MARCA</b></label>
+          <input 
+          name="marca" 
+          placeholder='Marca' 
+          onChange={(e) => setMarca(e.target.value)} 
+          />
+        </Form.Field>
+        <Form.Field className='inputs'>
+          <label><b>IMAGEM</b></label>
+          <input 
+          name="imagem" 
+          placeholder='Imagem' 
+          onChange={(e) => setImagem(e.target.value)} 
+          />
+        </Form.Field>
+        <Link to="/read"><Button type='submit' color="success" onClick={sendDataToAPI}>Inserir</Button></Link>
       </Form>
+      <div className='nada'></div>
     </div>
   )
 }

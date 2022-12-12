@@ -1,32 +1,49 @@
-.criacao {
+.Main{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+}
+
+.nada{
+    width: 33.33%;
+}
+
+form{
     text-align: center;
-    margin: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 33.33%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
 }
 
-input {
-    margin-left: 10px;
-    border: inset #7fffd4;
+.inputs{
+    margin: 1%;
 }
 
-input :hover {
-    border-radius: 50px rgb(47, 26, 121);
+.inputs label{
+    display: block;
 }
 
-.nome {
-    margin: 1px 10px 1px 10px;
+.inputs input{
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    border-radius:  5px;
 }
 
-.sobrenome {
-    margin: 10px;
+form button{
+    margin: 15px;
 }
 
-.btn {
-    border: inset #7fffd4;
-    margin-left: 10%;
-}
+@media only screen and (max-width: 700px) {
+    .nada{
+        display: none;
+    }
 
-label {
-    font-size: large;
-  
-    color: white;
+    form {
+        width: 80%;
+    }
 }

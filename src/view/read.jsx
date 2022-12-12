@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Table, Button } from 'semantic-ui-react';
+import { Table } from 'semantic-ui-react';
+import { Button } from 'reactstrap';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -12,10 +13,10 @@ export default function Read() {
             })
     }, [])
 
-    const setData = (id, firstName, lastName) => {
-        localStorage.setItem('ID', id)
-        localStorage.setItem('firstName', firstName)
-        localStorage.setItem('lastName', lastName)
+    const setData = (id, nomes, valor) => {
+        localStorage.setItem('id', id)
+        localStorage.setItem('nomes', nomes)
+        localStorage.setItem('valor', valor)
     }
 
     const getData = () => {
@@ -27,9 +28,8 @@ export default function Read() {
 
     const onDelete = (id) => {
         axios.delete(`https://js0n-server.vercel.app/GPU/${id}`)
-        .then(() => {
-            getData();
-        })
+        
+        setApiData(apiData.filter(data => data.id !== id))
     }
 
     return (
@@ -38,10 +38,10 @@ export default function Read() {
                 <Table.Header>
                     <Table.Row>
                         <Table.HeaderCell>ID</Table.HeaderCell>
-                        <Table.HeaderCell>First Name</Table.HeaderCell>
-                        <Table.HeaderCell>Last Name</Table.HeaderCell>
-                        <Table.HeaderCell>Update</Table.HeaderCell>
-                        <Table.HeaderCell>Delete</Table.HeaderCell>
+                        <Table.HeaderCell>Modelo</Table.HeaderCell>
+                        <Table.HeaderCell>Valor</Table.HeaderCell>
+                        <Table.HeaderCell></Table.HeaderCell>
+                        <Table.HeaderCell></Table.HeaderCell>
                     </Table.Row>
                 </Table.Header>
 
@@ -50,19 +50,19 @@ export default function Read() {
                         return (
                             <Table.Row>
                                 <Table.Cell>{data.id}</Table.Cell>
-                                <Table.Cell>{data.firstName}</Table.Cell>
-                                <Table.Cell>{data.lastName}</Table.Cell>
+                                <Table.Cell>{data.nomes}</Table.Cell>
+                                <Table.Cell>{data.valor}</Table.Cell>
                                 <Table.Cell>
                                     <Link to='/update'>
                                         <Button
-                                            color="green"
-                                            onClick={() => setData(data.id, data.firstName, data.lastName)}>
+                                            color="warning"
+                                            onClick={() => setData(data.id, data.nomes, data.valor)}>
                                             Update
                                         </Button>
                                     </Link>
                                 </Table.Cell>
                                 <Table.Cell>
-                                    <Button color="red" onClick={() => onDelete(data.id)}>Delete</Button>
+                                    <Button color="danger" onClick={() => onDelete(data.id)}>Delete</Button>
                                 </Table.Cell>
                             </Table.Row>
                         )
