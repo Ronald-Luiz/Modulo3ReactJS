@@ -64,7 +64,14 @@ function Barra() {
     </header>
     <Outlet />
     </div>
+
+
+
 	);
+
+
+
+	
 }
 
 export default Barra;

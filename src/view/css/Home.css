@@ -1,0 +1,20 @@
+.Container {
+    
+    display: fixed;
+    flex-direction: column;
+    box-sizing: content-box;
+    width: 100%;
+}
+.SlideCarousel {
+    
+    padding: 0.5rem;
+    width: 100%;
+}
+.Spotlight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    
+}

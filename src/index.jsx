@@ -13,35 +13,55 @@ import Servicos from "./view/Servicos";
 import Contatos from "./view/Contatos";
 import Dashboard from "./view/Dashboard";
 import NoPage from "./view/NoPage";
+import Principal from "./Principal.jsx";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<Menu />}>
           <Route index element={<Home />} />
-          <Route path= "Footer" element={<Footer/>} />
+
+          <Route path="Footer" element={<Footer />} />
           <Route path="Servicos" element={<Servicos />} />
           <Route path="Produtos" element={<Produtos />} />
           <Route path="Contatos" element={<Contatos />} />
-          <Route path="Read" element={<Read/>}/>
-          <Route path="Create" element={<Create/>}/>
-          <Route path="Update" element={<Update/>}/>
+          <Route path="Read" element={<Read />} />
+          <Route path="Create" element={<Create />} />
+          <Route path="Update" element={<Update />} />
           <Route path="Dashboard" element={<Dashboard />} />
           <Route path="*" element={<NoPage />} />
 
         </Route>
       </Routes>
     </BrowserRouter>
+
+    
+
+    
   );
+
+ 
 }
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
+ 
+
   <>
-    
+ 
     <App />
-    <Footer/>
+    
+
+    <Footer />
+
+
+
+
+    
   </>
 );
 
