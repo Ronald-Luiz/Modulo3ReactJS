@@ -34,9 +34,9 @@ class HelloForm extends React.Component {
                     <strong>Email</strong> <input type="text" onChange={this.handleTextChange.bind(this)}></input>
                     <strong>Telefone</strong> <input type="text" onChange={this.handleTextChange.bind(this)}></input>
                     <strong>Digite o texto:</strong> <input type="text" onChange={this.handleTextChange.bind(this)}></input>
-                    <button className="botao" onClick={this.handleClick.bind(this)}>Enviar</button>
+                    
                 </div>
-
+                <button className="botao" onClick={this.handleClick.bind(this)}>Enviar</button>
                 
             </div>          
           
