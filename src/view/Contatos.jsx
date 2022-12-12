@@ -44,7 +44,7 @@ class HelloForm extends React.Component {
              <div class="main texto" style="margin-top: 45px;">
     <div class="card-container">
         <div class="cards">
-          <div class="avatar"><img src={avatar}></div>
+          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
           <p><h4>LEONARDO MACENA</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
@@ -55,46 +55,46 @@ class HelloForm extends React.Component {
         </div>
    
         <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil"></div>
-          <p><h4>DIÓGENES DA SILVA</h4></p>
+          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
+          <p><h4>PABLO MICELI</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
-            <a href="https://github.com/diogenesferreirabr" target="_blank"><img src="img/git.png" alt="GitHub"></a>
-            <a href="" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/diogenes-ferreira-6aab9324a/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" target="_blank"><img src="img/git.png" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
           </div>
         </div>
 
         <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil"></div>
-          <p><h4>LEONARDO RODRIGUES</h4></p>
+          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
+          <p><h4>RONALD LUIZ</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
-            <a href="https://github.com/leomacena" target="_blank"><img src="img/git.png" alt="GitHub"></a>
-            <a href="https://instagram.com/leomacena23" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/leonardomacena/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" target="_blank"><img src="img/git.png" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
           </div>
         </div>
 
         <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil"></div>
-          <p><h4>LUÍS HENRIQUE</h4></p>
+          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
+          <p><h4>VALDEILSON</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
-            <a href="https://github.com/Luis-Henrique-Lima" target="_blank"><img src="img/git.png" alt="GitHub"></a>
-            <a href="" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/lu%C3%ADs-henrique-santos/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" target="_blank"><img src="img/git.png" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
           </div>
         </div>
 
         <div class="cards">
-          <div class="avatar"><img src={avatar} alt="Perfil"></div>
-          <p><h4>PEDRO DE SOUZA</h4></p>
+          <div class="avatar"><img src={avatar} alt="Perfil" /></div>
+          <p><h4>VICTOR ROBSON</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
-            <a href="https://github.com/themonsteer" target="_blank"><img src="img/git.png" alt="GitHub"></a>
-            <a href="" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/pedro-souza-a382b3182" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" target="_blank"><img src="img/git.png" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="img/inst.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
           </div>
         </div>       
     </div>
