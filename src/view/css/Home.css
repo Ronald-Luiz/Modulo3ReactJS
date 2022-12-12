@@ -1,12 +1,22 @@
 .Container {
-    height:1500;
-    width: 450;
+    height:auto;
+    width: auto;
+    padding:0;
     display: fixed;
     flex-direction: column;
     box-sizing: content-box;
     margin-top:20px;
     margin-bottom:20px;
  
+}
+
+.rank{
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
 }
 .SlideCarousel {
     
@@ -79,14 +89,12 @@ a:hover{
   @media (max-width: 700px)
 {
 .div2{
- display: flex;
-flex-direction: column;
-
-
-
+  grid-template-columns: repeat(1, calc(100%));
 
 }
-  
+  .image{
+    translate: 0.5em;;
+  }
 }
   
   
