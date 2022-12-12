@@ -1,0 +1,81 @@
+.Container {
+    height:1500;
+    width: 450;
+    display: fixed;
+    flex-direction: column;
+    box-sizing: content-box;
+ 
+}
+.SlideCarousel {
+    
+    padding: 0.5rem;
+    width: 100%;
+}
+.Spotlight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    
+}
+
+.image{
+    justify-content: center;
+    width: 80%;
+}
+
+.vermais{
+    
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 300px;
+    margin: 20px;
+    border: 2px solid #E8E8E8;
+    padding: 8px;
+    color: white;
+    background-color: #43AEE3;
+  }
+
+  a{
+    text-decoration: none;
+    color:white;
+  }
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+
+.div2{
+    display: flex;
+    flex-direction: row;
+   
+    width:auto;
+    transition: all 0.3s ease-out;
+  
+}
+
+
+  
+  @media (max-width:800px) {
+    .Spotlight {
+      max-width: 350px;
+      max-height: 350px;
+    }
+  
+  }
+
+  @media (max-width:800px) {
+    .carousel {
+      display:none;
+    }
+  
+  }
+  
+  
+  
+  
+  
