@@ -1,7 +1,8 @@
 import React from 'react';
 import SweetAlert from 'react-bootstrap-sweetalert';
-import './css/Contatos.css'
-import Swal from 'sweetalert2'
+import './css/Contatos.css';
+import Swal from 'sweetalert2';
+import avatar from "../images/avatar.png"
 
 class HelloForm extends React.Component {
     
@@ -43,18 +44,18 @@ class HelloForm extends React.Component {
              <div class="main texto" style="margin-top: 45px;">
     <div class="card-container">
         <div class="cards">
-          <div class="avatar"><img src="img/caio.jpeg"></div>
-          <p><h4>CAIO PEREIRA</h4></p>
+          <div class="avatar"><img src={avatar}></div>
+          <p><h4>LEONARDO MACENA</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
-            <a href="https://github.com/caaiopereira" target="_blank"><img src="img/git.png"></a>
-            <a href="https://instagram.com/kingscaio" target="_blank"><img src="img/inst.png"></a>
-            <a href="https://www.linkedin.com/in/caio-pereira-oliveira/" target="_blank"><img src="img/linkedin.png" ></a>
+            <a href="#" target="_blank"><img src="img/git.png"></a>
+            <a href="#" target="_blank"><img src="img/inst.png"></a>
+            <a href="#" target="_blank"><img src="img/linkedin.png" ></a>
           </div>
         </div>
    
         <div class="cards">
-          <div class="avatar"><img src="img/daniel.jpg" alt="Perfil"></div>
+          <div class="avatar"><img src={avatar} alt="Perfil"></div>
           <p><h4>DIÓGENES DA SILVA</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
@@ -65,7 +66,7 @@ class HelloForm extends React.Component {
         </div>
 
         <div class="cards">
-          <div class="avatar"><img src="img/leonardo.jpg" alt="Perfil"></div>
+          <div class="avatar"><img src={avatar} alt="Perfil"></div>
           <p><h4>LEONARDO RODRIGUES</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
@@ -76,7 +77,7 @@ class HelloForm extends React.Component {
         </div>
 
         <div class="cards">
-          <div class="avatar"><img src="img/luiz.jpg" alt="Perfil"></div>
+          <div class="avatar"><img src={avatar} alt="Perfil"></div>
           <p><h4>LUÍS HENRIQUE</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
@@ -87,7 +88,7 @@ class HelloForm extends React.Component {
         </div>
 
         <div class="cards">
-          <div class="avatar"><img src="img/pedro.jpg" alt="Perfil"></div>
+          <div class="avatar"><img src={avatar} alt="Perfil"></div>
           <p><h4>PEDRO DE SOUZA</h4></p>
           <p><h5>Função na equipe</h5></p>
           <div class="social">
