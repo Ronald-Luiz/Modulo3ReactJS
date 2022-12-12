@@ -1,10 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import './css/Produtos.css'
-import {
-  Card, Button, CardImg, CardTitle, CardText, CardDeck,
-  CardSubtitle, CardBody, Container
-} from 'reactstrap';
 
 const Example = (props) => {
   document.title="Produtos";
@@ -42,7 +38,7 @@ const Example = (props) => {
               </div>
               </div>
               <div className='image-div-produto'>
-                <img className="image-produto" src="https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SY450_.jpg" alt="settings" />
+                <img className="image-produto" src={post.imagem} alt="settings" />
               </div>
               <div className="container-txt-produto">
                 <p className="txt-produto"><strong className="titulo-produto">{post.nomes} - </strong>{post.subtitulo}</p>
