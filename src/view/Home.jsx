@@ -41,6 +41,8 @@ import {
 
 
   function Example(args) {
+      document.title="Boom gráfico"
+    
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
