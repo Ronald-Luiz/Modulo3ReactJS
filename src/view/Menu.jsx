@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import {Outlet} from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../view/logo.png"
 import {
 	Collapse,
 	Navbar,
@@ -27,7 +28,7 @@ function Barra() {
 	return (
     <div>
 		<header>
-			<h3>LOGO</h3>
+			<img src={logo} alt="logo" />
 			<div>
 			<nav ref={navRef}>
 				<a href="/">INICIO</a>
@@ -64,14 +65,7 @@ function Barra() {
     </header>
     <Outlet />
     </div>
-
-
-
 	);
-
-
-
-	
 }
 
 export default Barra;
