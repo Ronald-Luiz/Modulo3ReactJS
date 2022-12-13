@@ -1,8 +1,6 @@
-
-
 .containerCards {
   display: grid;
-  grid-template-columns: repeat(3, calc(33.3%));
+  grid-template-columns: repeat(4, calc(25.0%));
   justify-content: center;
   text-align: center;
 }
@@ -90,7 +88,22 @@
   margin: 0px 10px 0px 3px;
 }
 
-@media (max-width: 700px)
+
+@media (max-width: 1700px) {
+  .containerCards {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.33%));
+  }
+}
+
+@media (max-width: 1200px) {
+  .containerCards {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50.0%));
+  }
+}
+
+@media (max-width: 800px)
 {
 .card{
  display: flex;
@@ -103,8 +116,8 @@ flex-direction: column;
 }
 
 .image-produto {
-  width: 150px;
-  height: 150px;
+  width: 320px;
+  height: auto;
 }
 
 }
