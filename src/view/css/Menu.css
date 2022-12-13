@@ -42,7 +42,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
+	height: 100px;
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-	color: var(--secondaryColor);
+	color: #74CDF7;
 }
 
 header .nav-btn {
@@ -79,7 +79,7 @@ nav {
 	align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	header .nav-btn {
 		visibility: visible;
 		display: block;

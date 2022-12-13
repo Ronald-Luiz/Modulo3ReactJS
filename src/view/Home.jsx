@@ -28,7 +28,7 @@ function UncontrolledExample() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://i.ibb.co/znMtXTW/CARROSEL1-1-1.png"
+              src="https://i.ibb.co/TtzrHZk/CARROSEL1.png"
               alt=""
             />
             <Carousel.Caption>
@@ -74,14 +74,13 @@ function UncontrolledExample() {
 
 
         <div className="card blue">
-          <div className='rank'>
-          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS</h5>
+          
+          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS
           <div className="box-posicao-top">
                 <div><b id="posicaoN">{1}</b></div>
               </div>
-              </div>
             <img class="image" src="https://i.ibb.co/qRpKPFf/1.jpg" alt="settings" />
-          <strong>RTX 3090 -</strong> 
+          </h5><strong>RTX 3090 -</strong> 
           <p>Placa de Vídeo RTX 3090 Asus NVIDIA GeForce, 24GB, GDDR6X - ROG-STRIX-RTX3090-O24G-GAMING</p>
           <strong>R$ 18.900</strong> 
           <div className="container-comprar"><button>EU QUERO</button></div>
@@ -89,14 +88,12 @@ function UncontrolledExample() {
         </div>
 
         <div className="card blue">
-          <div className='rank'>
-          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS</h5>
+          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS
           <div className="box-posicao-top">
                 <div><b id="posicaoN">{2}</b></div>
               </div>
-              </div>
             <img class="image" src="https://i.ibb.co/wShxnP0/2.jpg" alt="settings" />
-          <strong>RTX 3080 Ti -</strong> 
+          </h5><strong>RTX 3080 Ti -</strong> 
           <p>Placa de Vídeo RTX 3080 Ti Trinity Zotac GEFORCE, 12GB GDDR6X, 19Gbps, RGB, LHR, Ray Tracing, DLSS e IceStorm 2.0 - ZT-A30810D-10P</p>
           <strong>R$ 12.500</strong> 
           <div className="container-comprar"><button>EU QUERO</button></div>
@@ -105,14 +102,12 @@ function UncontrolledExample() {
         
 
         <div className="card blue">
-          <div className='rank'>
-          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS</h5>
+          <h5 className="txt-topPlaca"><b>TOP</b>PLACAS
           <div className="box-posicao-top">
                 <div><b id="posicaoN">{3}</b></div>
               </div>
-              </div>
             <img class="image" src="https://i.ibb.co/cLcqfQV/placa-de-video-gigabyte-radeon-rx-6900-xt-16-gb-gddr6-rgb-fusion-gv-r69xtgaming-oc-16gd-1610649024-o.jpg" alt="settings" />
-          <strong>RX 6900 XT -</strong> 
+          </h5><strong>RX 6900 XT -</strong> 
           <p>Placa de Vídeo RX 6900 XT Gigabyte Radeon, 16 GB, GDDR6, RGB Fusion - GV-R69XTGAMING OC-16GD</p>
           <strong>R$ 12.000</strong> 
           <div className="container-comprar"><button>EU QUERO</button></div>
