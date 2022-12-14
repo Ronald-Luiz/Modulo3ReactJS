@@ -1,0 +1,128 @@
+:root{
+  scroll-behavior: smooth !important;
+}
+.pg-compra{
+  display: grid;
+  grid-template-columns: repeat(2, calc(50.0%));
+  margin: 30px;
+}
+
+.container-infos-produto{
+  padding-right: 46px;
+}
+
+.image-div-produto{
+  width: 100%;
+  height: 500px;
+  background-color: aliceblue;
+  margin-bottom: 40px;
+}
+
+.image-produto {
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+}
+
+.container-txt-produto{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.txt-produto {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.container-valor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-top: 6px;
+  bottom: 0px;
+}
+
+.valor h4{
+  margin: 0px 10px 0px 3px;
+}
+
+.container-comprar button{
+  padding: 16px;
+  border: none;
+  color: white;
+  background-color: #43AEE3;
+  font-size: 1.4rem;
+
+}
+
+.container-comprar button:hover{
+  background-color: #74CDF7;
+}
+
+.container-pagamento{
+  max-width: 100%;
+  padding: 36px;
+  background-color: #F2F2F2;
+}
+
+.container-pagamento h3 {
+  margin-bottom: 26px;
+
+}
+
+.inputs-form-pagamento{
+  width: 100%;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.container-endereco-numero{
+  display: grid;
+  grid-template-columns: repeat(2, calc(50.0%));
+}
+
+.container-dados-endereco{
+  margin-top: 20px;
+}
+
+.container-numero{
+  padding-left: 22px;
+}
+
+
+.container-finalizar{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-finalizar button{
+  padding: 16px;
+  border: none;
+  color: white;
+  background-color: #43AEE3;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+
+@media (max-width: 1000px) {
+  .pg-compra{
+    display: grid;
+    grid-template-columns: repeat(1, calc(98.0%));
+    margin: 16px;
+    justify-content: center;
+  }
+  .container-infos-produto{
+    padding-right: 0px;
+    margin: 0px;
+  }
+
+  .pagamento{
+    background-color: #F2F2F2;
+    margin-top: 40px;
+  }
+}
