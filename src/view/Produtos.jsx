@@ -74,7 +74,7 @@ const Home = () => {
               </div>
               <div className="container-valor">
                 <div className="valor" id="valor-produto"><h4> {post.valor}</h4></div>
-                <div className="container-comprar"><button onClick={showAlert} className="btn btn-primary btn-lg">Comprar</button></div>
+                <div className="container-comprar"><button onClick={showAlert} className="btn btn-primary btn-lg">EU QUERO</button></div>
               </div>
             </div>
               )

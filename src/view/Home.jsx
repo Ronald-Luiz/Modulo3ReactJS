@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './css/Home.css';
+import Swal from "sweetalert2";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from 'react-bootstrap/Carousel';
 import {
   Button,
@@ -13,8 +15,27 @@ import {
 
 
 
+
+
+
 function UncontrolledExample() {
   document.title="Boom gráfico"
+
+  const showAlert = () => {
+    Swal.fire({
+      title: "Redirecionando para o carrinho",
+      text: "",
+      icon: "success",
+      confirmButtonText: "OK",
+    }).then(function () {
+        // Redirect the user
+        window.location.href = "#";
+      });
+  }
+
+
+
+
   return (
 
     
@@ -83,7 +104,7 @@ function UncontrolledExample() {
           </h5><strong>RTX 3090 -</strong> 
           <p>Placa de Vídeo RTX 3090 Asus NVIDIA GeForce, 24GB, GDDR6X - ROG-STRIX-RTX3090-O24G-GAMING</p>
           <strong>R$ 18.900</strong> 
-          <div className="container-comprar"><button>EU QUERO</button></div>
+          <div className="container-comprar"><button onClick={showAlert} className="btn btn-primary btn-lg">EU QUERO</button></div>
 
         </div>
 
@@ -96,7 +117,7 @@ function UncontrolledExample() {
           </h5><strong>RTX 3080 Ti -</strong> 
           <p>Placa de Vídeo RTX 3080 Ti Trinity Zotac GEFORCE, 12GB GDDR6X, 19Gbps, RGB, LHR, Ray Tracing, DLSS e IceStorm 2.0 - ZT-A30810D-10P</p>
           <strong>R$ 12.500</strong> 
-          <div className="container-comprar"><button>EU QUERO</button></div>
+          <div className="container-comprar"><button onClick={showAlert} className="btn btn-primary btn-lg">EU QUERO</button></div>
 
         </div>
         
@@ -110,7 +131,7 @@ function UncontrolledExample() {
           </h5><strong>RX 6900 XT -</strong> 
           <p>Placa de Vídeo RX 6900 XT Gigabyte Radeon, 16 GB, GDDR6, RGB Fusion - GV-R69XTGAMING OC-16GD</p>
           <strong>R$ 12.000</strong> 
-          <div className="container-comprar"><button>EU QUERO</button></div>
+          <div className="container-comprar"><button onClick={showAlert} className="btn btn-primary btn-lg">EU QUERO</button></div>
 
 
         </div>
