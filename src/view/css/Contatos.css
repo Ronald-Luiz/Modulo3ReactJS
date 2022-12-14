@@ -1,68 +1,121 @@
+.MainContact {
+  display: flex;
+  flex-direction: column;
+}
 
-.teste{
- 
-    margin-top:70px;
-    margin-left: auto;
-    margin-right: auto; 
-    display: flex;
-   flex-direction: column;
-   width: 600px;
-   font-size: 25px ;
-   color: black;
+.contact{
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+  min-width: 160px;
+  min-height: 430px;
+  grid-template-columns: repeat(5, calc(20%));
+  padding: 5px;
+}
+
+.card b{
+  color: black;
+}
+.contact img {
+  border-radius: 50px;
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  border: 4px solid rgb(80, 0, 0);
+}
+
+.avatar{
+  display: block;
+  position: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: auto;
+  height: auto;
+  margin: auto;
+
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;   
+}
+
+.social a{
+  margin: 5px;
+}
+
+.social img{
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+}
+
+.teste {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  font-size: 25px;
+  color: black;
 }
 
 
-.botao{
-  margin-left:auto;
-  margin-right:auto;
-    margin-top:50px;
-    border:1px solid #25692A;
-border-radius:4px;
-display:inline-block;
-cursor:pointer;
-font-family:Verdana;
-font-weight:bold;
-font-size:13px;
-padding:6px 10px;
-text-decoration:none;
+.botao {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: 1px solid #25692A;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 6px 10px;
+  text-decoration: none;
 }
 
 
 .botao:hover {
-    background:linear-gradient(to bottom, #46a7f5 5%, #f7d6b3 100%);
-    }
+  background: linear-gradient(to bottom, #46a7f5 5%, #f7d6b3 100%);
+}
 
 @media (max-height:800px) {
-    .teste {
-      max-width: 350px;
-      max-height: 350px;
-    }
-  
+  .teste {
+    max-width: 350px;
+    max-height: 350px;
   }
-  
-  @media (max-width:800px) {
-    .teste {
-      max-width: 350px;
-      max-height: 350px;
-    }
-  
+
+}
+
+@media (max-width:800px) {
+  .teste {
+    max-width: 350px;
+    max-height: 350px;
   }
-  
-  
-  
-  
-  @media (max-height:800px) {
-    .teste {
-      display: flex;
-      flex-direction: column;
-    }
-  
+
+}
+
+
+
+
+@media (max-height:800px) {
+  .teste {
+    display: flex;
+    flex-direction: column;
   }
-  
-  @media (max-width:800px) {
-    .teste {
-      display:flex;
-      flex-direction: column;
-    }
-  
+
+}
+
+@media (max-width:800px) {
+  .teste {
+    display: flex;
+    flex-direction: column;
   }
+
+}
