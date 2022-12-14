@@ -42,23 +42,23 @@ class HelloForm extends React.Component {
 
                         <div className="teste">
                             
-                            <strong>Nome</strong> <Form.Control className='form'
+                            <strong>Nome</strong> <Form.Control className='formulario'
                                 as={InputMask}
 
                                 placeholder="Digite seu nome"
                             />
-                            <strong>Email</strong> <Form.Control className='form'
+                            <strong>Email</strong> <Form.Control className='formulario'
                                 as={InputMask}
 
                                 placeholder="Digite seu email"
                             />
 
                             <strong>Telefone</strong>
-                            <Form.Control className='form'
+                            <Form.Control className='formulario'
                                 as={InputMask}
                                 mask="(99)99999-9999"
                                 placeholder="Digite seu Telefone" />
-                            <strong>Digite o texto:</strong> <Form.Control className='form'
+                            <strong>Digite o texto:</strong> <Form.Control className='formulario'
                                 as={InputMask}
 
                                 placeholder="Digite o texto" />
