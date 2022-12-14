@@ -16,8 +16,8 @@
 .ErroImg{
     display: flex;
     justify-content: center;
-    padding: 0.3em;
-    height: 40em;
+    height: 50%;
+    width: auto;
     border-top: 1em;
 }
 .ErroPage2{
@@ -52,4 +52,47 @@
     background-color: black;
     color: floralwhite;
     font-size: 1.7em;
+}
+
+@media (max-width:1200px){
+    .ErroImg{
+        width: auto;
+    }
+    .ErroImg img{
+        height: 600px;
+    }
+}
+
+@media (max-width:950px){
+    .ErroImg img{
+        height: 400px;
+    }
+    .Ul li a{
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width:800px){
+    .ErroImg img{
+        height: 300px;
+    }
+    .Ul li a{
+        font-size: 1em;
+    }
+}
+@media (max-width:600px){
+    .ErroImg img{
+        height: 200px;
+    }
+}
+@media (max-width: 500px){
+    .Ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .Ul li{
+        margin-top: 13%;
+    }
 }
