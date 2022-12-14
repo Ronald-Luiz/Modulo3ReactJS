@@ -24,7 +24,7 @@
 
 
 
-@media (min-height:200px)
+@media (max-height:550px)
 {
 .rodape{
   margin-bottom: -4000px;
