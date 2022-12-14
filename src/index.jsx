@@ -4,7 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from "./view/Menu";
 import Home from "./view/Home";
-import Footer from "./view/Footer.jsx";
+import Footer from "./view/Footer";
 import Read from "./view/read.jsx"
 import Create from "./view/create.jsx"
 import Update from "./view/update.jsx"
