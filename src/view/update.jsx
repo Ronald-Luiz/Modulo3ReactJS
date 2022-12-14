@@ -91,7 +91,7 @@ export default function Update() {
           onChange={(e) => setImagem(e.target.value)} 
           />
         </Form.Field>
-                <a href="https://modulo3-react-js.vercel.app/read"><Button type='submit' color='warning' onClick={sendDataToAPI}>Update</Button></a>
+                <Button type='submit' color='warning' onClick={sendDataToAPI}><a href="https://modulo3-react-js.vercel.app/read">Update</a></Button>
             </Form>
         
         <div className='nada'></div>
