@@ -4,9 +4,10 @@ import './css/Contatos.css'
 import Swal from 'sweetalert2'
 import InputMask from 'react-input-mask';
 import Form from 'react-bootstrap/Form';
-import val from '../images/valdeilson.jpeg'
 import avatar from '../images/avatar.png'
+import ronald from '../images/ronald.jpeg'
 import pablo from '../images/pablo.jpeg'
+import val from '../images/valdeilson.jpeg'
 import leo from '../images/leonardo.jpeg'
 import git from '../images/git.png'
 import insta from '../images/insta.png'
@@ -72,7 +73,7 @@ class HelloForm extends React.Component {
                 <div className='contact'>
 
                     <div className='card'>
-                        <div class="avatar"><img src={avatar} alt='Perfil' /></div>
+                        <div class="avatar"><img src={ronald} alt='Perfil' /></div>
                         <p><h4><b>RONALD LUIZ</b></h4></p>
                         <p><h6>CO-FACILITADOR</h6></p>
                         <div class="social">
