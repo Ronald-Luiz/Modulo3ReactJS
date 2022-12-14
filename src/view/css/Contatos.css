@@ -155,12 +155,23 @@
     margin: auto;
     margin-bottom: 10%;
     margin-top: 16px;
+    min-width: 250px;
   }
+
 }
 
+@media (max-width: 750px){
+.form{
+  width: fit-content;
+}
+.cardForm{
+  text-align: left;
+}
+}
 @media (max-width: 600px){
   .contact{
     display: grid;
     grid-template-columns: repeat(1, calc(95%));
   }
+
 }
