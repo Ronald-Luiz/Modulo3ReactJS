@@ -35,39 +35,42 @@ class HelloForm extends React.Component {
         return (
             <div className='MainContact'>
 
-                <div className="card blue">
+                <div className="ajustes">
+                    <div className="cardForm">
+
+                        <h2>PARA MAIS INFORMAÇÕES, ENTRE EM CONTATO</h2>
+
+                        <div className="teste">
+                            
+                            <strong>Nome</strong> <Form.Control className='form'
+                                as={InputMask}
+
+                                placeholder="Digite seu nome"
+                            />
+                            <strong>Email</strong> <Form.Control className='form'
+                                as={InputMask}
+
+                                placeholder="Digite seu email"
+                            />
+
+                            <strong>Telefone</strong>
+                            <Form.Control className='form'
+                                as={InputMask}
+                                mask="(99)99999-9999"
+                                placeholder="Digite seu Telefone" />
+                            <strong>Digite o texto:</strong> <Form.Control className='form'
+                                as={InputMask}
+
+                                placeholder="Digite o texto" />
 
 
 
-                    <div className="teste">
-                        <strong>Nome</strong> <Form.Control
-                            as={InputMask}
-
-                            placeholder="Digite seu nome"
-                        />
-                        <strong>Email</strong> <Form.Control
-                            as={InputMask}
-
-                            placeholder="Digite seu email"
-                        />
-
-                        <strong>Telefone</strong>
-                        <Form.Control
-                            as={InputMask}
-                            mask="(99)99999-9999"
-                            placeholder="Digite seu Telefone" />
-                        <strong>Digite o texto:</strong> <Form.Control
-                            as={InputMask}
-
-                            placeholder="Digite o texto" />
-
-
+                        </div>
+                        <button className="botao" onClick={this.handleClick.bind(this)}>Enviar</button>
 
                     </div>
-                    <button className="botao" onClick={this.handleClick.bind(this)}>Enviar</button>
-
+                <h1>CONHEÇA NOSSA EQUIPE</h1>
                 </div>
-
 
 
                 <div className='contact'>
@@ -91,7 +94,7 @@ class HelloForm extends React.Component {
                         <div class="social">
                             <a href="#" target="_blank"><img src={git} alt='Perfil' /></a>
                             <a href="#" ><img src={insta} alt='Perfil' /></a>
-                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>                        
+                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>
                         </div>
                     </div>
 
@@ -103,10 +106,10 @@ class HelloForm extends React.Component {
                         <div class="social">
                             <a href="#" target="_blank"><img src={git} alt='Perfil' /></a>
                             <a href="#"><img src={insta} alt='Perfil' /></a>
-                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>                        
+                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>
                         </div>
                     </div>
-                    
+
                     <div className='card'>
                         <div class="avatar"><img src={leo} alt='Perfil' /></div>
                         <p><h4><b>LEONARDO MACENA</b></h4></p>
@@ -125,7 +128,7 @@ class HelloForm extends React.Component {
                         <div class="social">
                             <a href="#" target="_blank"><img src={git} alt='Perfil' /></a>
                             <a href="#"><img src={insta} alt='Perfil' /></a>
-                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>                        
+                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>
                         </div>
                     </div>
 
