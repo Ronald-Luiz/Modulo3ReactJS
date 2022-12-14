@@ -85,27 +85,23 @@
   background: linear-gradient(to bottom, #46a7f5 5%, #f7d6b3 100%);
 }
 
+@media (max-width: 1160px){
+  .contact{
+    display: grid;
+    grid-template-columns: repeat(4, calc(25%));
+  }
+}
+@media (max-width: 950px){
+  .contact{
+    display: grid;
+    grid-template-columns: repeat(3, calc(33%));
+  }
+}
+
 @media (max-height:800px) {
   .teste {
     max-width: 350px;
     max-height: 350px;
-  }
-
-}
-
-@media (max-width:800px) {
-  .teste {
-    max-width: 350px;
-    max-height: 350px;
-  }
-
-}
-
-
-
-
-@media (max-height:800px) {
-  .teste {
     display: flex;
     flex-direction: column;
   }
@@ -114,8 +110,21 @@
 
 @media (max-width:800px) {
   .teste {
+    max-width: 350px;
+    max-height: 350px;
     display: flex;
     flex-direction: column;
   }
+  .contact{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50%));
+  }
 
+}
+
+@media (max-width: 600px){
+  .contact{
+    display: grid;
+    grid-template-columns: repeat(1, calc(95%));
+  }
 }
