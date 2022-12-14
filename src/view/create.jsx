@@ -86,7 +86,7 @@ export default function Create() {
           onChange={(e) => setImagem(e.target.value)} 
           />
         </Form.Field>
-        <Link to="/read"><Button type='submit' color="success" onClick={sendDataToAPI}>Inserir</Button></Link>
+        <a href="https://modulo3-react-js.vercel.app/read"><Button type='submit' color="success" onClick={sendDataToAPI}>Inserir</Button></a>
       </Form>
       <div className='nada'></div>
     </div>
