@@ -11,7 +11,8 @@ import Update from "./view/update.jsx"
 import Produtos from "./view/Produtos";
 import Contatos from "./view/Contatos";
 import NoPage from "./view/NoPage";
-import Principal from "./Principal.jsx";
+import Carrinho from "./view/Carrinho";
+
 
 export default function App() {
   return (
@@ -22,8 +23,9 @@ export default function App() {
           <Route index element={<Home />} />
 
           <Route path="Footer" element={<Footer />} />
-          <Route path="Produtos" element={<Produtos />} />
           <Route path="Contatos" element={<Contatos />} />
+          <Route path="Produtos" element={<Produtos />} />
+          <Route path="Carrinho" element={<Carrinho />} />
           <Route path="Read" element={<Read />} />
           <Route path="Create" element={<Create />} />
           <Route path="Update" element={<Update />} />
@@ -50,7 +52,7 @@ root.render(
   <>
  
     <App />
-    
+   <compra/>
 
     <Footer />
 

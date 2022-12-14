@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import {Outlet} from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../images/logo-nav.png"
+import logo from "../images/logo-nav.png";
+import {BsCart4} from 'react-icons/bs';
 import {
 	UncontrolledDropdown,
 	DropdownToggle,
@@ -24,8 +25,9 @@ function Barra() {
 			<div>
 			<nav ref={navRef}>
 				<a href="/">INICIO</a>
-				<a href="/produtos">PRODUTOS</a>
 				<a href="/contatos">CONTATOS</a>
+				<a href="/produtos">PRODUTOS</a>
+				<a href="#" className="cart"><BsCart4 /></a>
 				<UncontrolledDropdown
 				inNavbar
 				nav

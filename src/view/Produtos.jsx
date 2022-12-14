@@ -1,9 +1,33 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect, Component} from 'react';
 import axios from 'axios';
+import Swal from "sweetalert2";
+import "bootstrap/dist/css/bootstrap.min.css";
 import './css/Produtos.css'
 
-const Example = (props) => {
+
+
+
+
+const Home = () => {
   document.title="Produtos";
+
+
+
+ const showAlert = () => {
+  Swal.fire({
+    title: "Redirecionando para o carrinho",
+    text: "",
+    icon: "success",
+    confirmButtonText: "OK",
+  }).then(function () {
+      // Redirect the user
+      window.location.href = "#";
+    });
+}
+  
+
+
+
 
   const [ posts, setPosts ] = useState([])
 
@@ -18,8 +42,13 @@ const Example = (props) => {
     })
 
   }, [])
+
+ 
+  
+  
   return (
 
+    
     <div>
 
       <div className="containerCards">
@@ -45,7 +74,7 @@ const Example = (props) => {
               </div>
               <div className="container-valor">
                 <div className="valor" id="valor-produto"><h4> {post.valor}</h4></div>
-                <div className="container-comprar"><button>EU QUERO</button></div>
+                <div className="container-comprar"><button onClick={showAlert} className="btn btn-primary btn-lg">Comprar</button></div>
               </div>
             </div>
               )
@@ -57,4 +86,4 @@ const Example = (props) => {
   );
 };
 
-export default Example;
+export default Home;

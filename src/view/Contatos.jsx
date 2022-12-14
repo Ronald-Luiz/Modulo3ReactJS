@@ -9,6 +9,7 @@ import ronald from '../images/ronald.jpeg'
 import pablo from '../images/pablo.jpeg'
 import val from '../images/valdeilson.jpeg'
 import leo from '../images/leonardo.jpeg'
+import victor from '../images/victor.jpeg'
 import git from '../images/git.png'
 import insta from '../images/insta.png'
 import linkedin from '../images/linkedin.png'
@@ -80,9 +81,9 @@ class HelloForm extends React.Component {
                         <p><h4><b>RONALD LUIZ</b></h4></p>
                         <p><h6>CO-FACILITADOR</h6></p>
                         <div class="social">
-                            <a href="#" target="_blank"><img src={git} alt='Perfil' /></a>
+                            <a href="#"><img src={git} alt='Perfil' /></a>
                             <a href="#"><img src={insta} alt='Perfil' /></a>
-                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>
+                            <a href="#"><img src={linkedin} alt='Perfil' /></a>
                         </div>
                     </div>
 
@@ -92,9 +93,9 @@ class HelloForm extends React.Component {
                         <p><h4><b>PABLO MICELI</b></h4></p>
                         <p><h6>GESTOR DE CONHECIMENTO</h6></p>
                         <div class="social">
-                            <a href="#" target="_blank"><img src={git} alt='Perfil' /></a>
+                            <a href="#"><img src={git} alt='Perfil' /></a>
                             <a href="#" ><img src={insta} alt='Perfil' /></a>
-                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>
+                            <a href="#"><img src={linkedin} alt='Perfil' /></a>
                         </div>
                     </div>
 
@@ -104,9 +105,9 @@ class HelloForm extends React.Component {
                         <p><h4><b>VALDEILSON</b></h4></p>
                         <p><h6>GESTOR DE GENTE E ENGAJAMENTO</h6></p>
                         <div class="social">
-                            <a href="#" target="_blank"><img src={git} alt='Perfil' /></a>
+                            <a href="#"><img src={git} alt='Perfil' /></a>
                             <a href="#"><img src={insta} alt='Perfil' /></a>
-                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>
+                            <a href="#"><img src={linkedin} alt='Perfil' /></a>
                         </div>
                     </div>
 
@@ -115,20 +116,20 @@ class HelloForm extends React.Component {
                         <p><h4><b>LEONARDO MACENA</b></h4></p>
                         <p><h6>COLABORADOR I</h6></p>
                         <div class="social">
-                            <a href="#" target="_blank"><img src={git} alt='Perfil' /></a>
+                            <a href="#"><img src={git} alt='Perfil' /></a>
                             <a href="#"><img src={insta} alt='Perfil' /></a>
-                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>
+                            <a href="#"><img src={linkedin} alt='Perfil' /></a>
                         </div>
                     </div>
 
                     <div className='card'>
-                        <div class="avatar"><img src={avatar} alt='Perfil' /></div>
+                        <div class="avatar"><img src={victor} alt='Perfil' /></div>
                         <p><h4><b>VICTOR ROBSON</b></h4></p>
                         <p><h6>COLABORADOR II</h6></p>
                         <div class="social">
-                            <a href="#" target="_blank"><img src={git} alt='Perfil' /></a>
+                            <a href="#"><img src={git} alt='Perfil' /></a>
                             <a href="#"><img src={insta} alt='Perfil' /></a>
-                            <a href="#" target="_blank"><img src={linkedin} alt='Perfil' /></a>
+                            <a href="#"><img src={linkedin} alt='Perfil' /></a>
                         </div>
                     </div>
 

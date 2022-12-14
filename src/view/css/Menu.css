@@ -18,6 +18,14 @@ li{
 	list-style: none !important;
 }
 
+.cart{
+	scale: 1.5;
+
+}
+
+
+
+
 .ConfBtn{
 	background-color: black;
 	border: none;
@@ -84,6 +92,11 @@ nav {
 		visibility: visible;
 		display: block;
 		opacity: 1;
+	}
+
+	.cart{
+		scale: 1.0;
+	
 	}
 
 	header img{
